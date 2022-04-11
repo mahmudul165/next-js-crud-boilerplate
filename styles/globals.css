@@ -1,0 +1,317 @@
+/* font */
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"); */
+/* common style or utilities */
+.body {
+  margin: 0px;
+  padding: 0px;
+  font-family: Assistant !important;
+}
+.bg-custom-color {
+  background-color: #f5f5f5 !important;
+}
+.global-text {
+  color: #ff4917 !important;
+}
+.ul-li-custom li {
+  list-style-type: square;
+  margin: 0 !important;
+
+  text-decoration: solid !important;
+}
+ul li::marker {
+  color: #ff4917 !important;
+  font-size: 1.5em;
+  background-color: #ff4917;
+}
+
+.banner-sub-title {
+  font-family: "Assistant";
+  font-style: normal;
+  font-weight: 600;
+  font-size: medium;
+  line-height: 27px;
+  letter-spacing: 0.68em;
+  text-transform: uppercase;
+}
+.banner-main-tittle {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+.navbar-custom {
+  position: relative;
+  overflow: hidden;
+  padding-left: 20%;
+}
+.navbar-custom::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100%;
+  border-top: 100px solid #ff4917;
+  border-right: 100px solid transparent;
+  /* background-color: #ff4917; */
+}
+/* slider  */
+.slider {
+  position: relative;
+  overflow: hidden;
+  background-color: black !important;
+  z-index: -1;
+}
+.slider::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 7%;
+  height: 100%;
+  border-top: 203px solid #ff4917;
+  border-right: 200px solid transparent;
+  /* background-color: #ff4917; */
+}
+.slider::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 9%;
+  height: 100%;
+  border-top: 256px solid #ff4917;
+  border-right: 250px solid transparent;
+  opacity: 75%;
+  /* background-color: #ff4917; */
+}
+.slider::after(:after) {
+  position: relative;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 11%;
+  height: 100%;
+  border-top: 300px solid red;
+  border-right: 250px solid transparent;
+  opacity: 50%;
+  /* background-color: #ff4917; */
+}
+.ul-style {
+  margin-left: 500px;
+}
+ul li {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+li a {
+  text-decoration: none;
+  padding: 4px;
+  position: 0 10px;
+}
+.container-position {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 5px;
+
+  align-items: center;
+}
+@media screen and (max-width: 600px) {
+  .shopping-size {
+    align-items: center;
+    width: 400px;
+    height: auto;
+  }
+  .model-img {
+    align-items: center;
+    margin-left: 0%;
+    width: 390px;
+  }
+  section {
+    margin-bottom: 40px;
+  }
+}
+/* btn color */
+.btn-color-bg {
+  background-color: #ff4917 !important;
+}
+.slider {
+  background-image: url(/images/rsz_business-consulting.jpg);
+  background-color: black;
+
+  z-index: 1;
+}
+/* .navbar-custom::before {
+  height: auto;
+  width: 200px;
+  background-color: #ff4917 !important;
+} */
+.button-custom {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+.inner-button {
+  position: absolute;
+  right: 6px;
+  width: 50%;
+  height: 70%;
+  border-radius: 79px;
+  z-index: -1;
+}
+
+.button-custom-in {
+  position: absolute;
+  right: 6px;
+  width: 50%;
+  height: 70%;
+  border-radius: 79px;
+  background-color: #ff4917;
+  z-index: -1;
+}
+.test-shape-1 {
+  height: 74px;
+  width: 184px !important;
+  border-radius: 50%;
+  display: inline-block;
+  border: 26px solid #f3f3f3;
+  border-top: 22px solid #ff4917;
+  border-radius: 50%;
+  width: 120px;
+  height: 150px;
+}
+.test-shape-2 {
+  height: 74px;
+  width: 184px !important;
+  border-radius: 50%;
+  display: inline-block;
+  border: 26px solid #f3f3f3;
+  border-right: 22px solid #ff4917;
+  border-bottom: 22px solid #ff4917;
+  border-radius: 50%;
+  width: 120px;
+  height: 150px;
+}
+/* service */
+.service {
+  /* display: inline-block; */
+}
+/* css for video */
+.video-section {
+  display: block;
+  position: relative;
+
+  z-index: -1;
+}
+.video-content {
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+
+  background-color: black;
+  z-index: 1;
+}
+.vid-bg {
+  right: 0;
+  bottom: 0;
+  width: 100% !important;
+  object-fit: cover;
+  height: 576px !important;
+}
+.we-do-section {
+  margin-top: 350px;
+}
+.we-do-top-container {
+  margin-top: -300px !important;
+}
+.advisor-container div {
+  padding: 20px;
+}
+/* services section card */
+.feature-card {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+.feature-card::before {
+  position: absolute;
+  content: "";
+  bottom: 0% !important;
+  left: 0% !important;
+  width: 7%;
+  height: 100%;
+  border-bottom: 120px solid #ff4917;
+  border-right: 123px solid transparent;
+  /* background-color: #ff4917; */
+}
+.feature-card::after {
+  position: absolute;
+  content: "";
+  bottom: 0% !important;
+  left: 0% !important;
+  width: 9%;
+  height: 100%;
+  border-bottom: 186px solid #ff4917;
+  border-right: 180px solid transparent;
+  opacity: 75%;
+
+  /* background-color: #ff4917; */
+}
+.z-index-custom {
+  left: 0%;
+  bottom: 0%;
+  z-index: 1 !important;
+}
+.img-do-section ::hover {
+  width: 600px;
+  height: 600px;
+  transition: 3 ease-in;
+}
+/* about us section */
+.about-us-shape {
+  position: relative;
+  overflow: hidden;
+  z-index: -1;
+}
+.about-us-shape::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 7%;
+  height: 100%;
+  border-top: 203px solid #ff4917;
+  border-right: 200px solid transparent;
+  background-repeat: no-repeat;
+}
+.about-us-shape::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 9%;
+  height: 100%;
+  border-top: 256px solid #ff4917;
+  border-right: 250px solid transparent;
+  opacity: 75%;
+  /* background-color: #ff4917; */
+}
+/* team card shape */
+
+.team-shape {
+  position: relative;
+  overflow: hidden;
+  z-index: -1;
+}
+.team-shape::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 4%;
+  height: 100%;
+  border-top: 80px solid #ff4917;
+  border-right: 80px solid transparent;
+  background-repeat: no-repeat;
+}
